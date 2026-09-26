@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Documentation Manager"
+  short_description: "AIDM: build or update project documentation"
+  default_prompt: "Use $ai-documentation-manager for this project's documentation; ask whether to build or update when I have not specified a mode."

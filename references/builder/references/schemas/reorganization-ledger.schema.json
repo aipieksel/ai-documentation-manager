@@ -1,0 +1,151 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "documentation-reorganization-ledger.schema.json",
+  "type": "object",
+  "required": [
+    "schema",
+    "generatedAt",
+    "projectRoot",
+    "mode",
+    "orderedOperations",
+    "operationalRoots",
+    "ignoredPaths",
+    "entries",
+    "indexUpdated",
+    "indexFinalizedAfterMoves",
+    "substancePreservationReviewed",
+    "blockedItems"
+  ],
+  "properties": {
+    "schema": {
+      "const": "documentation-reorganization-ledger/v2"
+    },
+    "generatedAt": {
+      "type": "string",
+      "minLength": 1
+    },
+    "projectRoot": {
+      "type": "string",
+      "minLength": 1
+    },
+    "mode": {
+      "enum": [
+        "adopt",
+        "restructure",
+        "audit",
+        "auto"
+      ]
+    },
+    "orderedOperations": {
+      "type": "array",
+      "minItems": 8,
+      "items": {
+        "type": "string"
+      }
+    },
+    "operationalRoots": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string"
+      }
+    },
+    "ignoredPaths": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "action",
+          "classification",
+          "substanceDisposition"
+        ],
+        "properties": {
+          "action": {
+            "enum": [
+              "created",
+              "updated",
+              "moved",
+              "renamed",
+              "moved-and-updated",
+              "merged-and-removed",
+              "removed-generated-scaffold",
+              "unchanged"
+            ]
+          },
+          "classification": {
+            "enum": [
+              "root-index",
+              "documentation-entrypoint",
+              "current-application",
+              "project-overview",
+              "operational",
+              "historical",
+              "observation",
+              "navigation-only-index",
+              "duplicate",
+              "generated-scaffold",
+              "unknown",
+              "excluded"
+            ]
+          },
+          "beforePath": {
+            "type": "string"
+          },
+          "afterPath": {
+            "type": "string"
+          },
+          "beforeSha256": {
+            "type": "string"
+          },
+          "afterSha256": {
+            "type": "string"
+          },
+          "substanceDisposition": {
+            "type": "string",
+            "minLength": 1
+          },
+          "substancePreservedAt": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "generatedScaffoldEvidence": {
+            "type": "string"
+          },
+          "sourceAuthority": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "notes": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "indexUpdated": {
+      "type": "boolean"
+    },
+    "indexFinalizedAfterMoves": {
+      "type": "boolean"
+    },
+    "substancePreservationReviewed": {
+      "type": "boolean"
+    },
+    "blockedItems": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": true
+}

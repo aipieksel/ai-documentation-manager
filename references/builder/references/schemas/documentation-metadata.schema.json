@@ -1,0 +1,21 @@
+{
+  "schema": "documentation-metadata-schema/v2",
+  "currentDocumentRequirements": [
+    "one H1 title",
+    "status",
+    "last updated date",
+    "concise summary",
+    "source ownership or source references",
+    "verification",
+    "maintenance context when applicable"
+  ],
+  "allowedStatuses": [
+    "Current",
+    "Implemented",
+    "Supporting",
+    "Needs Review",
+    "Historical",
+    "Planned",
+    "Blocked"
+  ]
+}

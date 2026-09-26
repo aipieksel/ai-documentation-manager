@@ -1,0 +1,4 @@
+interface:
+  display_name: "Project Documentation Builder"
+  short_description: "Build source-backed project documentation"
+  default_prompt: "Use $project-documentation-builder to adopt or comprehensively restructure this project documentation."

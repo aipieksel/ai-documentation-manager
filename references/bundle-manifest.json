@@ -1,0 +1,59 @@
+{
+  "schema": "ai-documentation-manager-bundle/v1",
+  "modules": {
+    "builder": {
+      "sourceFolder": "ai-project-documentation-builder",
+      "files": {
+        "README.md": "079c89875295d5465363b5563fb2899b850130a3832f416a922ffdeb3ceef90e",
+        "SKILL.md": "b40617c4b1de17cd056d3d8036b3d2cc98ea838e69feb0f7e4f75bdc32ccfbe4",
+        "agents/openai.yaml": "c9ac266e8cfc876d7eb2b922e1157e450a272c8d4b664ae8275ef883dc599e4a",
+        "assets/scaffolds/anomalies.md": "94fa91519214f959162bb2310425701953027f28b9265987866d49b61e13ecba",
+        "assets/scaffolds/critical.md": "169bfa66d1b8b902bdef0daacf346ecaf1d6f8d2dd39884c4b87cb46a61161c4",
+        "assets/scaffolds/documentation-agents.md": "ade45262db539b982f8ebdea8868258e2159f77b6e672f0144d6c825a8992cf6",
+        "assets/scaffolds/recommendations.md": "f161bd11331ebe5102465a7db5c036086c66258bde5181b506448b880f597e3b",
+        "assets/scaffolds/root-agents-managed-block.md": "a39d695c068adfeced51d9bcc3c35a1a155e966803cd0b440d14f0302cb7fd01",
+        "assets/templates/documentation-audit-report.md": "696e427424b1db5f85f9f08987524f4d4c47069b0988773ef2cd9d717a869714",
+        "assets/templates/feature-doc.md": "d19f945c760c33f4864cc1ba96752c04cdca3208d87705b4e0e021afdd55408f",
+        "assets/templates/module-doc.md": "0ceb98ebe64fd95bd550d7df8fd322d4a82b656d80b5fdee0b0f863540263369",
+        "assets/templates/project-overview.md": "90cf036f57a2a58113e3c1806e91fb8d8989cc576dc0e928e395681cf17effa2",
+        "assets/templates/reorganization-ledger.json": "15a3055094beea1c4bc2e1c00b5198284f01999f407ed3ec10a618d6001ad6fc",
+        "assets/templates/root-agents.md": "dc80d0978dc52cbdd46f354805fecef81e0d57e96f128ae2fb163b7f3bdf6eac",
+        "assets/templates/root-index.md": "143fa50a60006a6516ec64f80df8c883e68537f1dcf24a5efc4e8443dd548432",
+        "references/schemas/documentation-coverage.schema.json": "64cd07f752027cb0bfae7e6493d0a33981cb5b77a40b0f79efa7241ac1d7c8e0",
+        "references/schemas/documentation-index.schema.json": "2a8a85e49088cf5e8f927230ed293221228bd945c22d357b3f5029b7c9951545",
+        "references/schemas/documentation-metadata.schema.json": "1efb59d116e6f0d6e9f67eeddb84a71ce0973a83ef2a4a1075dfaddcd00b62d9",
+        "references/schemas/reorganization-ledger.schema.json": "0fbc16817ce2ef63bc995e8796c4981a7ead6ab54f6e32071cc822bc662fde4d",
+        "references/validation-contract.md": "48f65c1f3e23c3aa20a128e6e72c4038c8a6f0bbb6d05d53436c27c6f9d733f8",
+        "references/workflow.md": "502b780d98e257e0652d58f65b512398ed910b89a721d6c8797499eb7cb96b04",
+        "scripts/create_build_record.py": "ac2780bc39fb85959487913ea811e6889311290174e6fe49c0c377272a0a1e90",
+        "scripts/tests/test_create_build_record.py": "f124a04f8829690a850e14b827ffb0b9366ff547e3bc5f3ea8dabbdffabf8571",
+        "scripts/tests/test_validate_structure.py": "44b56df691215c3cdaf6edddd7b95da1fa96de25288bf9ae3a4aae5b5e55a787",
+        "scripts/validate_structure.py": "a8d5b80e0660be407f4d84def150c0c85704b9cfbaf738d53bba695d55090015"
+      },
+      "renamedFiles": {
+        "SKILL.md": "WORKFLOW.md"
+      }
+    },
+    "updater": {
+      "sourceFolder": "ai-project-documentation-updater",
+      "files": {
+        "README.md": "d28b566166891cbdb90a3211a6f373d0d620d2ef7c81a66e558cc4032568c1ac",
+        "SKILL.md": "49cb8279eeb0253ee8c5bfecb90093a6e15d32f1973003f4906a17aeed52b1cc",
+        "agents/openai.yaml": "321901c5bd3c58c6f6305dfbce63dc43a1768c6918e480b688633d1c54ccaaca",
+        "references/workflow.md": "6ac03f53f1d8aacc0c66de5052af594230533abaad62788210a0558e7c94a114",
+        "scripts/prepare_update.py": "80a07b9a5fb5cb9647d6c311b0855584d3e93692e4659c81d10b355e2d15ab7c",
+        "scripts/tests/fixtures/anomalies.md": "94fa91519214f959162bb2310425701953027f28b9265987866d49b61e13ecba",
+        "scripts/tests/fixtures/critical.md": "169bfa66d1b8b902bdef0daacf346ecaf1d6f8d2dd39884c4b87cb46a61161c4",
+        "scripts/tests/fixtures/documentation-agents.md": "ade45262db539b982f8ebdea8868258e2159f77b6e672f0144d6c825a8992cf6",
+        "scripts/tests/fixtures/recommendations.md": "f161bd11331ebe5102465a7db5c036086c66258bde5181b506448b880f597e3b",
+        "scripts/tests/fixtures/root-agents-managed-block.md": "a39d695c068adfeced51d9bcc3c35a1a155e966803cd0b440d14f0302cb7fd01",
+        "scripts/tests/test_maintenance_validation.py": "91e51e678fdbd487d7061545867cd33d51bbf4c1a05b8ca32160f0b5de19a9c2",
+        "scripts/tests/test_prepare_update.py": "f9b8688648c15fd998f8b63ce875cbf68133a4b7768321ad17e7e66ec50a4a72",
+        "scripts/validate_structure.py": "59a9808413a9ce3c69e8ef2300d048d411355257db1a6b58676b25e6742ebb3c"
+      },
+      "renamedFiles": {
+        "SKILL.md": "WORKFLOW.md"
+      }
+    }
+  }
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Project Documentation Updater"
+  short_description: "Maintain canonical project documentation after changes"
+  default_prompt: "Use $project-documentation-updater to update the canonical documentation for the changes in this task."

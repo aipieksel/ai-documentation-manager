@@ -1,0 +1,25 @@
+{
+  "schema": "documentation-reorganization-ledger/v2",
+  "generatedAt": "{{GENERATED_AT}}",
+  "projectRoot": "{{PROJECT_ROOT}}",
+  "mode": "{{MODE: adopt | restructure | audit | auto}}",
+  "orderedOperations": [
+    "inventory-and-classify",
+    "finalize-path-map",
+    "move-and-rename",
+    "merge-and-remove-obsolete-indexes",
+    "update-source-backed-content",
+    "compile-root-index",
+    "update-project-overview-and-agents",
+    "validate"
+  ],
+  "operationalRoots": [],
+  "ignoredPaths": [
+    "documents/documentation/agents"
+  ],
+  "entries": [],
+  "indexUpdated": false,
+  "indexFinalizedAfterMoves": false,
+  "substancePreservationReviewed": false,
+  "blockedItems": []
+}

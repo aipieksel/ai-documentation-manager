@@ -1,0 +1,31 @@
+{
+  "schema": "documentation-index-schema/v2",
+  "path": "documents/documentation/0-index.md",
+  "singleIndex": true,
+  "requiredHeadingsInOrder": [
+    "Required Routing Procedure",
+    "Authority Order",
+    "Status Legend",
+    "Documentation Map",
+    "Keyword and Source Routing Matrix",
+    "Source-Path Router",
+    "Cross-Cutting Planning Packs",
+    "Application Documentation Inventory",
+    "Operational and Historical Records",
+    "Documentation Maintenance Rules",
+    "Completion Check for Task Plans"
+  ],
+  "requiredRoutingColumns": [
+    "Search terms from the task or plan",
+    "Primary documentation",
+    "Source context to inspect",
+    "Also read when relevant"
+  ],
+  "mustLinkEveryApplicationMarkdownFile": true,
+  "forbiddenCompanionIndexes": [
+    "documents/documentation/index.md",
+    "documents/documentation/search-index.json",
+    "documents/documentation/search-keywords.md",
+    "documents/documentation/source-context-map.md"
+  ]
+}

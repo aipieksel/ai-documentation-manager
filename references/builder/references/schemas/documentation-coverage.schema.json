@@ -1,0 +1,12 @@
+{
+  "schema": "documentation-coverage-schema/v2",
+  "required": [
+    "sourceInventory",
+    "documentationClassification",
+    "finalPathMap",
+    "applicationInventory",
+    "operationalRoots",
+    "unmappedSourceAreas",
+    "blockedItems"
+  ]
+}
